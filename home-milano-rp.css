@@ -1,0 +1,185 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: #000000; /* nero pieno di base */
+    color: #ffffff; /* testo bianco puro per contrasto */
+    background-image: 
+      radial-gradient(circle at 3px 3px, rgba(255, 0, 0, 0.07) 2px, transparent 3px), /* pattern rosso tenue */
+      radial-gradient(circle at 6px 6px, rgba(255, 0, 0, 0.07) 2px, transparent 3px);
+    background-size: 12px 12px;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 40px 20px 20px;
+    background-color: #1a0000; /* rosso scuro quasi nero */
+    border-bottom: 2px solid #ff0000; /* rosso vivo */
+}
+
+.logo {
+    width: 180px;
+    height: auto;
+    margin: 0 auto 20px;
+    display: block;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(255, 0, 0, 0.6); /* ombra rossa */
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #ff0000; /* rosso vivo */
+}
+
+p {
+    font-size: 1.1em;
+    color: #ffffff;
+}
+
+/* CARD CONTAINER */
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 40px 20px;
+}
+
+.card {
+    background-color: #111111; /* nero scuro */
+    border: 2px solid #ff0000; /* bordo rosso vivo */
+    color: #ffffff;
+    text-decoration: none;
+    padding: 25px;
+    width: 260px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(255, 0, 0, 0.4);
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    text-align: center;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    background-color: #220000; /* rosso scuro più acceso */
+}
+
+.card h2 {
+    margin-bottom: 10px;
+    font-size: 1.4em;
+    color: #ff0000;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    background-color: #1a0000;
+    padding: 15px;
+    border-top: 2px solid #ff0000;
+    color: #ddd;
+}
+
+/* DISCORD SECTION */
+.chat-discord-section h2 {
+    color: #ff0000;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.chat-discord-section p {
+    color: #ffffff;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* DISCORD BUTTON */
+.discord-link {
+    display: inline-block;
+    background-color: #990000; /* rosso scuro */
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(153, 0, 0, 0.6);
+    transition: background-color 0.3s ease;
+}
+
+.discord-link:hover {
+    background-color: #cc0000; /* rosso vivo */
+}
+
+/* JOIN SERVER */
+.join-server {
+    text-align: center;
+    margin-top: 50px;
+    padding: 40px 20px;
+    background-color: rgba(255, 0, 0, 0.05);
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(255, 0, 0, 0.3);
+    backdrop-filter: blur(6px);
+}
+
+.join-server h2 {
+    color: #ff0000;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 3px #000000;
+}
+
+.join-server p {
+    color: #ffffff;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+.join-link {
+    display: inline-block;
+    background-color: #ff0000; /* rosso vivo */
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.6);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.join-link:hover {
+    background-color: #cc0000;
+    box-shadow: 0 6px 16px rgba(204, 0, 0, 0.8);
+}
+
+.join-code {
+    margin-top: 20px;
+    font-size: 1.1em;
+    color: #ffffff;
+}
+
+/* VIDEO */
+.video-section {
+  margin-top: 3rem;
+  text-align: center;
+  color: white;
+}
+
+.video-section h2 {
+  color: #ff0000;
+  margin-bottom: 1rem;
+}
+
+.video-player {
+  width: 90%;
+  max-width: 720px;
+  border-radius: 12px;
+  border: 2px solid #ff0000;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
+}
+
+/* Mantieni trasparenze su main e sezioni */
+main,
+section,
+footer {
+    background-color: transparent !important;
+}
